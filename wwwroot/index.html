@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/darkmode.css" />
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    <section>
+        <nav id="nav-target" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="background-image: linear-gradient(to right, #14345c, #654478, #ad547c, #e0736b, #f3a659);">
+            <a class="navbar-brand" href="#">LIFT</a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#photos">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <label class="switch">
+                    <input type="checkbox" onclick="darkLight(this)" id="checkBox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+
+        </nav>
+    </section>
+
+    <section id="photos" data-spy="scroll" data-target="#nav-target" data-offset="2">
+        <!-- Gallery -->
+        <div class="container" style="margin: auto; padding-top: 80px;">
+
+
+            <div class="row" style="position: relative;">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                         class="w-100 shadow-1-strong rounded mb-4"
+                         alt="Boat on Calm Water" />
+
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                         class="w-100 shadow-1-strong rounded mb-4"
+                         alt="Wintry Mountain Landscape" />
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+                         class="w-100 shadow-1-strong rounded mb-4"
+                         alt="Mountains in the Clouds" />
+
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                         class="w-100 shadow-1-strong rounded mb-4"
+                         alt="Boat on Calm Water" />
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                         class="w-100 shadow-1-strong rounded mb-4"
+                         alt="Waves at Sea" />
+
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                         class="w-100 shadow-1-strong rounded mb-4"
+                         alt="Yosemite National Park" />
+                </div>
+            </div>
+        </div>
+        <!-- Gallery -->
+    </section>
+
+    <section id="skills" data-spy="scroll" data-target="#nav-target" data-offset="0">
+        <div class="container">
+            <div class="title">
+                <h1>Skills</h1>
+                <p>These are the skills you will be learning in this class.</p>
+                <p>Click "Learn More" on each card to learn more about that skill!</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="https://play-lh.googleusercontent.com/RTAZb9E639F4JBcuBRTPEk9_92I-kaKgBMw4LFxTGhdCQeqWukXh74rTngbQpBVGxqo"
+                             alt=""
+                             class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">
+                                Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML.
+                            </p>
+                            <a class="btn btn-outline-dark" href="https://www.w3schools.com/css/default.asp" target="_blank" role="button">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="https://play-lh.googleusercontent.com/85WnuKkqDY4gf6tndeL4_Ng5vgRk7PTfmpI4vHMIosyq6XQ7ZGDXNtYG2s0b09kJMw"
+                             alt=""
+                             class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">
+                                The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.
+                            </p>
+                            <a class="btn btn-outline-dark" href="https://www.w3schools.com/html/default.asp" target="_blank" role="button">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="https://play-lh.googleusercontent.com/TzsxB3RFCBKOObTn0sw9jMHx3jwwULx9_1ig1kVDdOCUcuYFJFY3Eqzm8y7IjdhXr9I"
+                             alt=""
+                             class="card-img-top" />
+                        <!-- <img
+                          src="./images/My project-2.png"
+                          alt=""
+                          class="card-img-top"
+                        /> -->
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">
+                                JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.
+                            </p>
+                            <a class="btn btn-outline-dark" href="https://www.w3schools.com/js/default.asp" target="_blank" role="button">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <!-- <img
+                          src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
+                          alt=""
+                          class="card-img-top"
+                        /> -->
+                        <img src="./images/Octocat2 (1).png"
+                             alt=""
+                             class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">
+                                GitHub, Inc., is an Internet hosting service for software development and version control using Git. It provides the distributed version control of Git.
+                            </p>
+                            <a class="btn btn-outline-dark" href="https://github.com/" target="_blank" role="button">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <!-- <img
+                            src="https://1.bp.blogspot.com/-drAQCMMpBbI/X0v56f0fbMI/AAAAAAAAGN8/5V7Xcnsp8LIwfTQM7ev_eN9GFI7UPelzACNcBGAsYHQ/s1200/1200px-Visual_Studio_Code_1.35_icon.svg.jpg"
+                            alt=""
+                            class="card-img-top"
+                        /> -->
+                        <img src="./images/VSCodeLogo (1).png"
+                             alt=""
+                             class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">
+                                Visual Studio Code, also commonly referred to as VS Code, is a source-code editor made by Microsoft for Windows, Linux and macOS.
+                            </p>
+                            <a class="btn btn-outline-dark" href="https://code.visualstudio.com/" target="_blank" role="button">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="./images/BootstrapLogoFR.png"
+                             alt=""
+                             class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">
+                                Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript.
+                            </p>
+                            <a class="btn btn-outline-dark" href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank" role="button">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section>
+        <!-- Footer -->
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+
+                    <!-- Google -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fa fa-google"></i>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/caleb-ray" target="_blank" role="button">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </section>
+                <!-- Section: Social media -->
+                <!-- Section: Text -->
+                <section class="mb-4">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                        eum harum corrupti dicta, aliquam sequi voluptate quas.
+                    </p>
+                </section>
+                <!-- Section: Text -->
+                <!-- Section: Links -->
+                <section class="">
+                    <!--Grid row-->
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <!--Grid column-->
+            </div>
+            <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+    <!-- Copyright -->
+    <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    </section>
+
+    <script src="./js/darkmode.js"></script>
+</body>
+</html>
+
